@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,500;0,600;1,500&family=Roboto:ital,wght@0,500;0,700;1,300;1,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+bady{
+  background: #f1f6fc31;
+}
+section,
+footer{
+  padding: 54px 0;
+
+}
+h3{
+  font-size: 50px;
+
+}
+p{
+  color: #0000009c;
+}
+.contaneir{
+  max-width:1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.btn{
+background:#4f9cf9;
+color: white;
+padding: 15px 20px ;
+border-radius: 10px;
+cursor: pointer;
+display: inline-block;
+transition: all 0.3s ease;
+}
+.btn:hover{
+  background:#3580db;
+}
+
+header{
+  background-position:center;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+}
+
+nav{
+  display: flex;
+  height: 80px;
+  text-align: center;
+  justify-content:space-between;
+  padding-top: 30px;
+}
+nav ul{
+  display: flex;
+  align-items:center;
+}
+nav ul a{
+  color: white;
+  margin: 0 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+}
+nav ul a:not(.btn):after{
+ content:"";
+ background:#3580db;
+ height: 3px;
+ width:0%;
+ margin: 0 auto;
+ display:block;
+ transition: 0.3s;
+
+}
+a img{
+  width: 100px;
+}
+.btn.animate-btn{
+  animation: animate-outline 1s ease-out infinite;
+}
+nav ul a:hover::after{
+width: 100%;
+}
+
+/*Menu mobile*/
+nav .openMenu{
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight:bold;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+ nav .closeMenu{
+  color:#fff;
+  cursor:pointer;
+  font-size:33px;
+  font-weight:bold;
+  background:none;
+  border:none;
+  display: none;
+}
+
+@keyframes animate-outline{
+  from{
+    outline:0px solid #4f9bf98a;
+  }
+  to{
+    outline: 15px solid #4f9bf900;
+  }
+}
+.banner{
+  display: flex;
+  justify-content: center;
+}
+
+.banner .banner-text{
+  margin: 60px;
+  text-align:center;
+  padding: 0 90px;
+}
+.banner .banner-text h1{
+  font-size: 96px;
+  color: white;
+}
+.banner .banner-text p{
+  color: #ffffffb7;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 18px 0;
+}
+/* faca mais */
+.faca-mais .container{
+  display: flex;
+  align-items: center;
+}
+.faca-mais .faca-mais-text{
+  width: 50%;
+  padding: 0 40px;
+}
+.faca-mais .faca-mais-text h3{
+  font-size: 56px;
+}
+.faca-mais .faca-mais-text p{
+  margin: 5px 0 10px 0;
+}
+.faca-mais .faca-mais-img{
+  width: 50%;
+}
+.faca-mais .faca-mais-img img{
+  width: 100%;
+}
+
+.depoimento h3{
+  text-align: center;
+}
+.depoimento p{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.depoimento .cards-item{
+  background: #d3e6fd;
+  margin: 15px;
+  border-radius: 14px;
+  text-align: center;
+  width: 350px;
+  transition: 0.3s;
+}
+.depoimento .cards-item img{
+  border-radius: 100%;
+  margin: 10px auto;
+  display: block;
+  width: 80px;
+}
+.depoimento .cards-item .name-user{
+  font-weight: 600px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.depoimento .cards-item .depoimento-user{
+  font-size: 15px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+.depoimento .cards-item .estrelas{
+  margin: 15px 0;
+  border-top:2px solid #71767a23;
+}
+.depoimento .cards-item .estrelas i{
+  color: #4f9cf9;
+  font-size: 20px;
+ margin-top: 15px;
+ transition: 0.3s;
+}
+.depoimento .cards-item:hover{
+  background: #4f9cf9;
+  margin-top: -5px;
+}
+.depoimento .cards-item:hover .name-user,
+.depoimento .cards-item:hover .depoimento-user,
+.depoimento .cards-item:hover .estrelas i{
+  color: white;
+}
+/* Nota seção de comentários*/
+.clientes h3,
+.clientes p{
+  text-align: center;
+}
+
+.clientes .container div{
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.footer{
+  background: #4f9cf9;
+  text-align: center;
+
+
+
+}
+.footer a{
+  padding:5px;
+}
+
+.footer i{
+  color:#4f9cf9;
+  background: white;
+  padding: 15px;
+  margin-top:0;
+  border-radius:10px;
+ 
+}
+.footer p{
+  margin-top: 10px;
+  color: white;
+}
+/* Aqui estão os comandos página sobre */
+.sobre .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.sobre .sobre-text{
+  width: 50%;
+  padding:40px;
+}
+.sobre .sobre-text p{
+  margin: 18px;
+  color: #000000a6;
+}
+.sobre .sobre-img{
+  width: 50%;
+}
+
+.sobre .sobre-img img{
+  width: 100%;
+  border-radius:10px;
+}
+
+/*página do servinços*/
+.servicos h3{
+  text-align: center;
+}
+.servicos .container > p{
+  text-align: center;
+}
+.servicos .rows-cards{
+  display: flex;
+  justify-content: center;
+  margin-top: 20pt;
+  flex-wrap: wrap;
+}
+.servicos .row-card-item{
+  background-color:#d3e6fd;
+  width: 300px;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px;
+  transition: 0.3s;
+}
+.servicos .row-card-item:hover{
+  background:#4f9cf9;
+}
+.servicos .row-card-item:hover p{
+  color: #fff;
+}
+.servicos .row-card-item img{
+  background: #4f9cf9;
+  border-radius: 14px;
+  width: 70px;
+  padding: 9px;
+}
+.servicos .row-card-item  p.nome-servicos{
+  margin: 5px 0;
+  transition: 0.3s;
+}
+.servicos .row-card-item p.descricao-servicos{
+  transition: 0.3s;
+}
+
+.dados{
+  background: #d3e6fd;
+}
+.dados .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dados .dados-itens{
+  text-align: center;
+  margin: 15px;
+ 
+} 
+.dados .dados-itens img{
+  background-color:#4f9cf9;
+  border-radius: 14px;
+  padding: 10px;
+  margin-top: 15px;
+  width: 80px;
+}
+.dados .dados-itens p{
+  font-size: 18px;
+}
+.dados .dados-itens p strong{
+  font-size: 28px;
+}
+
+/* contactos*/
+.contacto-inf{
+ display: flex;
+ justify-content: space-between;
+ margin:30px;
+ margin-top: 50px;
+}
+.contacto-inf .lado-direito{
+  width: 50%;
+  padding: 30px;
+  background-color: #4f9cf9;
+  border-radius: 14px;
+  margin-right: 50px;
+  height:320px;
+}
+.contacto-inf .lado-direito div{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.contacto-inf .lado-direito div i{
+  font-size: 25px;
+  margin-right: 20px;
+  color: #fff;
+}
+.contacto-inf .lado-direito p{
+  font-size: 17px;
+  color: #fff;
+}
+.contacto-inf .logo-esquerdo{
+  width: 50%;
+}
+.contacto-inf .logo-esquerdo input{
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  height: 47px;
+  padding: 15px;
+  border-radius: 9px;
+  transition: 0.3s;
+  border: 2px solid #3580db;
+  color:#fff;
+  font-weight: lighter;
+}
+.contacto-inf .logo-esquerdo input:focus,
+.contacto-inf .logo-esquerdo textarea:focus{
+  border-color: #4f9cf9;
+
+}
+.contacto-inf .logo-esquerdo textarea{
+  border: 2px solid #3580db;
+  margin-bottom: 10px;
+  border-radius:9px;
+  padding: 15px;
+  color: #212121;
+  width: 100%;
+  transition: 0.3s;
+  resize: none;
+}
+.contacto-inf .logo-esquerdo button{
+  border: none;
+}
+
+/* parte responsiva do página */
+
+@media(max-width:819px){
+
+  nav .ul{
+    position: fixed;
+    background:#184b88  ;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    clip-path: circle(0% at 100% 0);
+    transition: 0.7s;
+  }
+  .ul.open{
+    clip-path: circle(141.4% at 100% 0);
+  }
+   .ul a{
+    margin: 38px 0;
+    font-size: 38px;
+    font-weight: bold;
+   }
+  nav .openMenu{
+    display: block
+  }
+  nav .closeMenu{
+    display: block;
+    position: absolute;
+    top:36px;
+    right:25px;
+  }
+  /*página home resposiva*/
+
+  .clientes .container .clien{
+    flex-direction: column;
+  }
+.faca-mais .faca-mais-text{
+  margin-top: 10px;
+  padding: 0 10px;
+  order: 1;
+}
+.faca-mais .container{
+  flex-direction: column-reverse;
+}
+.faca-mais .faca-mais-text h3{
+  font-size: 48px;
+}
+.faca-mais .faca-mais-text,
+.faca-mais .faca-mais-img{
+  width: 100%;
+}
+/* banner */
+.banner .banner-text{
+  padding: 0;
+  margin: 80px;
+}
+.banner .banner-text h1{
+  font-size: 80px;
+}
+.banner .banner-text p{
+  font-size: 15px;
+}
+.depoimento .cards-item{
+  width: 100%;
+}
+
+
+
+
+
+
+/*sobre */
+.sobre .container{
+  flex-direction: column-reverse;
+}
+.sobre .sobre-img,
+.sobre .sobre-text{
+  width: 100%;
+}
+.sobre .sobre-text{
+  margin-top: 40px;
+}
+/*pagina conatactos*/
+.contacto .contacto-inf{
+  flex-direction: column-reverse;
+
+}
+.contacto-inf .lado-direito,
+.contacto-inf .logo-esquerdo{
+  width: 100%;
+}
+.contacto-inf .logo-esquerdo{
+  margin-bottom: 30px;
+
+}
+}
+
+@media(max-width:489px){
+  .banner .banner-text h1{
+     font-size: 50px;
+  }
+  .faca-mais .faca-mais-text h3{
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
